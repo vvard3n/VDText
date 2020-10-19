@@ -1,9 +1,9 @@
 //
 //  UITextView+VDAdd.h
-//  Ecompany
+//  VDText
 //
 //  Created by Harwyn T'an on 2019/12/11.
-//  Copyright © 2019 Shenzhen Securities Times Co., Ltd. All rights reserved.
+//  Copyright © 2020 vvard3n. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

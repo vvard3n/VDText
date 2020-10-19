@@ -1,9 +1,9 @@
 //
 //  NSAttributedString+VDText.h
-//  Ecompany
+//  VDText
 //
 //  Created by Harwyn T'an on 2019/12/12.
-//  Copyright © 2019 Shenzhen Securities Times Co., Ltd. All rights reserved.
+//  Copyright © 2019 vvard3n All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -17,14 +17,33 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSAttributedString (VDText)
 
+@property (nullable, nonatomic, strong, readonly) UIFont *vd_font;
+@property (nullable, nonatomic, strong, readonly) UIColor *vd_color;
+
+///=============================================================================
+/// @name Query for VDText
+///=============================================================================
+
+/**
+ Returns the plain text from a range.
+ If there's `VDTextBackedStringAttributeName` attribute, the backed string will
+ replace the attributed string range.
+ 
+ @param range A range in receiver.
+ @return The plain text.
+ */
+- (NSString *)vd_plainTextForRange:(NSRange)range;
+
 @end
 
 
 @interface NSMutableAttributedString (VDText)
 
+@property (nullable, nonatomic, strong, readwrite) UIFont *vd_font;
+@property (nullable, nonatomic, strong, readwrite) UIColor *vd_color;
+
 - (void)vd_setTextBackedString:(nullable VDTextBackedString *)textBackedString range:(NSRange)range;
 - (void)vd_setTextBinding:(VDTextBinding *)textBinding range:(NSRange)range;
-- (void)vd_setTextBackedString:(nullable VDTextBackedString *)textBackedString range:(NSRange)range;
 
 /**
  Convenience method to set text highlight
@@ -41,6 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)vd_setAttribute:(NSString *)name value:(id)value;
 - (void)vd_setAttribute:(NSString *)name value:(id)value range:(NSRange)range;
+
 /// Get Height with width
 /// @param width maxWidth
 - (CGSize)vd_sizeFittingWithWidth:(CGFloat)width;

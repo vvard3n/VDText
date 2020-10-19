@@ -7,6 +7,7 @@
 //
 
 #import "VDTextEditor.h"
+#import "UIColor+VDAdd.h"
 
 NSString *const VDTextViewObserverSelectedTextRange = @"VDTextViewObserverSelectedTextRange";
 
@@ -203,40 +204,40 @@ NSString *const VDTextViewObserverSelectedTextRange = @"VDTextViewObserverSelect
         } else {
             [((NSMutableAttributedString *)_placeholderAttributedText) replaceCharactersInRange:NSMakeRange(0, _placeholderAttributedText.length) withString:@""];
         }
-        ((NSMutableAttributedString *)_placeholderAttributedText).yy_font = _placeholderFont;
-        ((NSMutableAttributedString *)_placeholderAttributedText).yy_color = _placeholderTextColor;
+        ((NSMutableAttributedString *)_placeholderAttributedText).vd_font = _placeholderFont;
+        ((NSMutableAttributedString *)_placeholderAttributedText).vd_color = _placeholderTextColor;
     } else {
         if (placeholderText.length > 0) {
             NSMutableAttributedString *atr = [[NSMutableAttributedString alloc] initWithString:placeholderText];
 //            if (!_placeholderFont) _placeholderFont = _font;
 //            if (!_placeholderFont) _placeholderFont = [self _defaultFont];
 //            if (!_placeholderTextColor) _placeholderTextColor = [self _defaultPlaceholderColor];
-            atr.yy_font = _placeholderFont;
-            atr.yy_color = _placeholderTextColor;
+            atr.vd_font = _placeholderFont;
+            atr.vd_color = _placeholderTextColor;
             _placeholderAttributedText = atr;
         }
     }
-    _placeholderText = [_placeholderAttributedText yy_plainTextForRange:NSMakeRange(0, _placeholderAttributedText.length)];
+    _placeholderText = [_placeholderAttributedText vd_plainTextForRange:NSMakeRange(0, _placeholderAttributedText.length)];
     [self _commitPlaceholderUpdate];
 }
 
 - (void)setPlaceholderFont:(UIFont *)placeholderFont {
     _placeholderFont = placeholderFont;
-    ((NSMutableAttributedString *)_placeholderAttributedText).yy_font = _placeholderFont;
+    ((NSMutableAttributedString *)_placeholderAttributedText).vd_font = _placeholderFont;
     [self _commitPlaceholderUpdate];
 }
 
 - (void)setPlaceholderTextColor:(UIColor *)placeholderTextColor {
     _placeholderTextColor = placeholderTextColor;
-    ((NSMutableAttributedString *)_placeholderAttributedText).yy_color = _placeholderTextColor;
+    ((NSMutableAttributedString *)_placeholderAttributedText).vd_color = _placeholderTextColor;
     [self _commitPlaceholderUpdate];
 }
 
 - (void)setPlaceholderAttributedText:(NSAttributedString *)placeholderAttributedText {
     _placeholderAttributedText = placeholderAttributedText.mutableCopy;
-    _placeholderText = [_placeholderAttributedText yy_plainTextForRange:NSMakeRange(0, _placeholderAttributedText.length)];
-    _placeholderFont = _placeholderAttributedText.yy_font;
-    _placeholderTextColor = _placeholderAttributedText.yy_color;
+    _placeholderText = [_placeholderAttributedText vd_plainTextForRange:NSMakeRange(0, _placeholderAttributedText.length)];
+    _placeholderFont = _placeholderAttributedText.vd_font;
+    _placeholderTextColor = _placeholderAttributedText.vd_color;
     [self _commitPlaceholderUpdate];
 }
 

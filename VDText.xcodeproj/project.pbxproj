@@ -14,12 +14,13 @@
 		7683176223A31ED8002A000E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7683176123A31ED8002A000E /* Assets.xcassets */; };
 		7683176523A31ED8002A000E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7683176323A31ED8002A000E /* LaunchScreen.storyboard */; };
 		7683176823A31ED8002A000E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683176723A31ED8002A000E /* main.m */; };
-		7683177823A31EF6002A000E /* VDTextHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683177423A31EF6002A000E /* VDTextHighlight.m */; };
-		7683177923A31EF6002A000E /* UITextView+VDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683177523A31EF6002A000E /* UITextView+VDAdd.m */; };
-		7683177A23A31EF6002A000E /* VDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683177623A31EF6002A000E /* VDTextView.m */; };
-		7683177B23A31EF6002A000E /* NSAttributedString+VDText.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683177723A31EF6002A000E /* NSAttributedString+VDText.m */; };
-		7683177E23A31F6C002A000E /* VDTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683177D23A31F6C002A000E /* VDTextEditor.m */; };
-		7683178123A36BDB002A000E /* VDTextKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683178023A36BDB002A000E /* VDTextKVO.m */; };
+		76863786253D758F0099C87F /* UITextView+VDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7686377A253D758F0099C87F /* UITextView+VDAdd.m */; };
+		76863787253D758F0099C87F /* VDTextKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7686377C253D758F0099C87F /* VDTextKVO.m */; };
+		76863788253D758F0099C87F /* VDTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7686377D253D758F0099C87F /* VDTextAttribute.m */; };
+		76863789253D758F0099C87F /* NSAttributedString+VDText.m in Sources */ = {isa = PBXBuildFile; fileRef = 7686377E253D758F0099C87F /* NSAttributedString+VDText.m */; };
+		7686378A253D758F0099C87F /* VDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76863782253D758F0099C87F /* VDTextView.m */; };
+		7686378B253D758F0099C87F /* VDTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 76863783253D758F0099C87F /* VDTextEditor.m */; };
+		76863791253D7CE50099C87F /* UIColor+VDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 76863790253D7CE50099C87F /* UIColor+VDAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,19 +36,22 @@
 		7683176423A31ED8002A000E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7683176623A31ED8002A000E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7683176723A31ED8002A000E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7683176F23A31EF6002A000E /* VDTextHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextHighlight.h; sourceTree = "<group>"; };
-		7683177023A31EF6002A000E /* UITextView+VDAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+VDAdd.h"; sourceTree = "<group>"; };
-		7683177123A31EF6002A000E /* NSAttributedString+VDText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+VDText.h"; sourceTree = "<group>"; };
-		7683177223A31EF6002A000E /* VDTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextView.h; sourceTree = "<group>"; };
-		7683177323A31EF6002A000E /* VDText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDText.h; sourceTree = "<group>"; };
-		7683177423A31EF6002A000E /* VDTextHighlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextHighlight.m; sourceTree = "<group>"; };
-		7683177523A31EF6002A000E /* UITextView+VDAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+VDAdd.m"; sourceTree = "<group>"; };
-		7683177623A31EF6002A000E /* VDTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextView.m; sourceTree = "<group>"; };
-		7683177723A31EF6002A000E /* NSAttributedString+VDText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+VDText.m"; sourceTree = "<group>"; };
-		7683177C23A31F6C002A000E /* VDTextEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDTextEditor.h; sourceTree = "<group>"; };
-		7683177D23A31F6C002A000E /* VDTextEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDTextEditor.m; sourceTree = "<group>"; };
-		7683177F23A36BDB002A000E /* VDTextKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDTextKVO.h; sourceTree = "<group>"; };
-		7683178023A36BDB002A000E /* VDTextKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDTextKVO.m; sourceTree = "<group>"; };
+		76863779253D758F0099C87F /* VDTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextView.h; sourceTree = "<group>"; };
+		7686377A253D758F0099C87F /* UITextView+VDAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+VDAdd.m"; sourceTree = "<group>"; };
+		7686377B253D758F0099C87F /* VDTextKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextKVO.h; sourceTree = "<group>"; };
+		7686377C253D758F0099C87F /* VDTextKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextKVO.m; sourceTree = "<group>"; };
+		7686377D253D758F0099C87F /* VDTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextAttribute.m; sourceTree = "<group>"; };
+		7686377E253D758F0099C87F /* NSAttributedString+VDText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+VDText.m"; sourceTree = "<group>"; };
+		7686377F253D758F0099C87F /* VDText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDText.h; sourceTree = "<group>"; };
+		76863780253D758F0099C87F /* NSAttributedString+VDText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+VDText.h"; sourceTree = "<group>"; };
+		76863781253D758F0099C87F /* VDTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextAttribute.h; sourceTree = "<group>"; };
+		76863782253D758F0099C87F /* VDTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextView.m; sourceTree = "<group>"; };
+		76863783253D758F0099C87F /* VDTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextEditor.m; sourceTree = "<group>"; };
+		76863784253D758F0099C87F /* UITextView+VDAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+VDAdd.h"; sourceTree = "<group>"; };
+		76863785253D758F0099C87F /* VDTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextEditor.h; sourceTree = "<group>"; };
+		7686378D253D7B910099C87F /* VDTextContents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDTextContents.h; sourceTree = "<group>"; };
+		7686378F253D7CE50099C87F /* UIColor+VDAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VDAdd.h"; sourceTree = "<group>"; };
+		76863790253D7CE50099C87F /* UIColor+VDAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VDAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,19 +103,22 @@
 		7683176E23A31EF6002A000E /* VDText */ = {
 			isa = PBXGroup;
 			children = (
-				7683177323A31EF6002A000E /* VDText.h */,
-				7683176F23A31EF6002A000E /* VDTextHighlight.h */,
-				7683177423A31EF6002A000E /* VDTextHighlight.m */,
-				7683177023A31EF6002A000E /* UITextView+VDAdd.h */,
-				7683177523A31EF6002A000E /* UITextView+VDAdd.m */,
-				7683177223A31EF6002A000E /* VDTextView.h */,
-				7683177623A31EF6002A000E /* VDTextView.m */,
-				7683177F23A36BDB002A000E /* VDTextKVO.h */,
-				7683178023A36BDB002A000E /* VDTextKVO.m */,
-				7683177C23A31F6C002A000E /* VDTextEditor.h */,
-				7683177D23A31F6C002A000E /* VDTextEditor.m */,
-				7683177123A31EF6002A000E /* NSAttributedString+VDText.h */,
-				7683177723A31EF6002A000E /* NSAttributedString+VDText.m */,
+				7686378F253D7CE50099C87F /* UIColor+VDAdd.h */,
+				76863790253D7CE50099C87F /* UIColor+VDAdd.m */,
+				7686378D253D7B910099C87F /* VDTextContents.h */,
+				76863780253D758F0099C87F /* NSAttributedString+VDText.h */,
+				7686377E253D758F0099C87F /* NSAttributedString+VDText.m */,
+				76863784253D758F0099C87F /* UITextView+VDAdd.h */,
+				7686377A253D758F0099C87F /* UITextView+VDAdd.m */,
+				7686377F253D758F0099C87F /* VDText.h */,
+				76863781253D758F0099C87F /* VDTextAttribute.h */,
+				7686377D253D758F0099C87F /* VDTextAttribute.m */,
+				76863785253D758F0099C87F /* VDTextEditor.h */,
+				76863783253D758F0099C87F /* VDTextEditor.m */,
+				7686377B253D758F0099C87F /* VDTextKVO.h */,
+				7686377C253D758F0099C87F /* VDTextKVO.m */,
+				76863779253D758F0099C87F /* VDTextView.h */,
+				76863782253D758F0099C87F /* VDTextView.m */,
 			);
 			path = VDText;
 			sourceTree = "<group>";
@@ -142,7 +149,7 @@
 		7683174A23A31ED6002A000E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = vvard3n;
 				TargetAttributes = {
 					7683175123A31ED6002A000E = {
@@ -186,16 +193,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7683177B23A31EF6002A000E /* NSAttributedString+VDText.m in Sources */,
-				7683178123A36BDB002A000E /* VDTextKVO.m in Sources */,
+				76863789253D758F0099C87F /* NSAttributedString+VDText.m in Sources */,
+				7686378B253D758F0099C87F /* VDTextEditor.m in Sources */,
+				76863788253D758F0099C87F /* VDTextAttribute.m in Sources */,
 				7683175D23A31ED6002A000E /* ViewController.m in Sources */,
+				7686378A253D758F0099C87F /* VDTextView.m in Sources */,
 				7683175723A31ED6002A000E /* AppDelegate.m in Sources */,
-				7683177823A31EF6002A000E /* VDTextHighlight.m in Sources */,
 				7683176823A31ED8002A000E /* main.m in Sources */,
-				7683177A23A31EF6002A000E /* VDTextView.m in Sources */,
+				76863787253D758F0099C87F /* VDTextKVO.m in Sources */,
+				76863791253D7CE50099C87F /* UIColor+VDAdd.m in Sources */,
 				7683175A23A31ED6002A000E /* SceneDelegate.m in Sources */,
-				7683177E23A31F6C002A000E /* VDTextEditor.m in Sources */,
-				7683177923A31EF6002A000E /* UITextView+VDAdd.m in Sources */,
+				76863786253D758F0099C87F /* UITextView+VDAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +255,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -305,6 +314,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
