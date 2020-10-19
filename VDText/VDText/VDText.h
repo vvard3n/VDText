@@ -9,11 +9,11 @@
 #if __has_include(<VDText/VDText.h>)
 #import <VDText/VDTextEditor.h>
 #import <VDText/VDDTextView.h>
-#import <VDText/VDTextHighlight.h>
+#import <VDText/VDTextAttribute.h>
 #import <VDText/NSAttributedString+VDText.h>
 #else
 #import "VDTextEditor.h"
 #import "VDTextView.h"
-#import "VDTextHighlight.h"
+#import "VDTextAttribute.h"
 #import "NSAttributedString+VDText.h"
 #endif

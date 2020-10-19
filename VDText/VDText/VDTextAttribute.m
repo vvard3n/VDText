@@ -1,14 +1,42 @@
 //
-//  VDTextHighlight.m
+//  VDTextAttribute.m
 //  Ecompany
 //
 //  Created by Harwyn T'an on 2019/12/12.
 //  Copyright © 2019 Shenzhen Securities Times Co., Ltd. All rights reserved.
 //
 
-#import "VDTextHighlight.h"
+#import "VDTextAttribute.h"
 
 NSString *const VDTextBindingAttributeName = @"VDTextBinding";
+NSString *const VDTextHighlightAttributeName = @"VDTextHighlight";
+NSString *const VDTextBackedStringAttributeName = @"VDTextBackedString";
+
+@implementation VDTextBackedString
+
++ (instancetype)stringWithString:(NSString *)string {
+    VDTextBackedString *one = [self new];
+    one.string = string;
+    return one;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.string forKey:@"string"];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super init];
+    _string = [aDecoder decodeObjectForKey:@"string"];
+    return self;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    typeof(self) one = [self.class new];
+    one.string = self.string;
+    return one;
+}
+
+@end
 
 @implementation VDTextBinding
 
@@ -44,16 +72,16 @@ NSString *const VDTextBindingAttributeName = @"VDTextBinding";
     return one;
 }
 
-//+ (instancetype)highlightWithBackgroundColor:(UIColor *)color {
-//    YYTextBorder *highlightBorder = [YYTextBorder new];
++ (instancetype)highlightWithBackgroundColor:(UIColor *)color {
+//    VDTextBorder *highlightBorder = [VDTextBorder new];
 //    highlightBorder.insets = UIEdgeInsetsMake(-2, -1, -2, -1);
 //    highlightBorder.cornerRadius = 3;
 //    highlightBorder.fillColor = color;
-//    
-//    YYTextHighlight *one = [self new];
+    
+    VDTextHighlight *one = [self new];
 //    [one setBackgroundBorder:highlightBorder];
-//    return one;
-//}
+    return one;
+}
 
 - (void)setAttributes:(NSDictionary *)attributes {
     _attributes = attributes.mutableCopy;

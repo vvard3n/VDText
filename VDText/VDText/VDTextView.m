@@ -30,22 +30,9 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-//        [self addObserver:self forKeyPath:@"selectedRange" options:NSKeyValueObservingOptionNew context:nil];
         self.kvo = [VDTextKVO new];
         [self addObserver:self.kvo forKeyPath:@"selectedTextRange" options:NSKeyValueObservingOptionNew context:nil];
         [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(textDidChange:) name:UITextViewTextDidChangeNotification object:self];
-        
-        NSMutableAttributedString *attStr = [[NSMutableAttributedString alloc] initWithString:@"abc" attributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
-        [attStr appendAttributedString:[[NSAttributedString alloc] initWithString:@"#highlight#" attributes:@{NSForegroundColorAttributeName : [UIColor blueColor],
-                                                                                                              VDTextBindingAttributeName : [VDTextBinding bindingWithDeleteConfirm:YES]
-        }]];
-        [attStr appendAttributedString:[[NSAttributedString alloc] initWithString:@"123" attributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}]];
-        [attStr appendAttributedString:[[NSAttributedString alloc] initWithString:@"#highlight#" attributes:@{NSForegroundColorAttributeName : [UIColor blueColor],
-                                                                                                              VDTextBindingAttributeName : [VDTextBinding bindingWithDeleteConfirm:YES]
-        }]];
-        [attStr appendAttributedString:[[NSAttributedString alloc] initWithString:@"defkdjhsfsdahjksadkfhjsadfads" attributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}]];
-        [attStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:20] range:NSMakeRange(0, attStr.length)];
-        self.attributedText = attStr;
     }
     return self;
 }
@@ -63,11 +50,11 @@
     NSLog(@"修改文字");
 }
 
--(void)setPlaceholder:(NSString *)placeholder {
-    _placeholder = placeholder;
-    // setNeedsDisplay会在下一个消息循环时刻，调用drawRect:
-    [self setNeedsDisplay];
-}
+//-(void)setPlaceholder:(NSString *)placeholder {
+//    _placeholder = placeholder;
+//    // setNeedsDisplay会在下一个消息循环时刻，调用drawRect:
+//    [self setNeedsDisplay];
+//}
 
 -(void)setText:(NSString *)text {
     [super setText:text];
@@ -81,22 +68,22 @@
     [self setNeedsDisplay];
 }
 
-- (void)drawRect:(CGRect)rect {
-    
-    // 如果有输入文字，就直接返回，不画占位文字
-    if (self.hasText) return;
-    //设置文字属性
-    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
-    attributes[NSFontAttributeName] = self.font;
-    attributes[NSForegroundColorAttributeName] = self.placeholderColor ? self.placeholderColor : [UIColor lightGrayColor];
-    //画文字
-    CGFloat x = 5;
-    CGFloat width = rect.size.width -2 * x;
-    CGFloat y = 8;
-    CGFloat height = rect.size.height - 2 * y;
-    CGRect placeholderRect = CGRectMake(x, y, width, height);
-    [self.placeholder drawInRect:placeholderRect withAttributes:attributes];
-}
+//- (void)drawRect:(CGRect)rect {
+//
+//    // 如果有输入文字，就直接返回，不画占位文字
+//    if (self.hasText) return;
+//    //设置文字属性
+//    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+//    attributes[NSFontAttributeName] = self.font;
+//    attributes[NSForegroundColorAttributeName] = self.placeholderColor ? self.placeholderColor : [UIColor lightGrayColor];
+//    //画文字
+//    CGFloat x = 5;
+//    CGFloat width = rect.size.width -2 * x;
+//    CGFloat y = 8;
+//    CGFloat height = rect.size.height - 2 * y;
+//    CGRect placeholderRect = CGRectMake(x, y, width, height);
+//    [self.placeholder drawInRect:placeholderRect withAttributes:attributes];
+//}
 
 
 - (BOOL)becomeFirstResponder {
@@ -121,7 +108,7 @@
 
 - (void)deleteBackward {
     NSRange effectiveRange;
-    if (self.selectedRange.location == 0 && self.selectedRange.length == 0) {
+    if (self.selectedRange.location == 0) {
         [super deleteBackward];
         return;
     }
@@ -132,6 +119,18 @@
     else {
         NSMutableAttributedString *attrbuteString = self.attributedText.mutableCopy;
         self.preSelecteRanget = self.selectedRange;
+        
+        if (self.selectedRange.length > 0) {
+            NSMutableAttributedString *attrbuteString = self.attributedText.mutableCopy;
+            [attrbuteString replaceCharactersInRange:self.selectedRange withString:@""];
+            self.attributedText = attrbuteString;
+            self.preSelecteRanget = NSMakeRange(self.preSelecteRanget.location, 0);
+            self.selectedRange = self.preSelecteRanget;
+            if ([self.delegate respondsToSelector:@selector(textViewDidChange:)]) {
+                [self.delegate textViewDidChange:self];
+            }
+            return;
+        }
         
         if (!self.delConform) {
             self.delConform = YES;

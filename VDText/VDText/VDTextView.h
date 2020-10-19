@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #if __has_include(<VDText/VDText.h>)
-#import <VDText/VDTextHighlight.h>
+#import <VDText/VDTextAttribute.h>
 #else
-#import "VDTextHighlight.h"
+#import "VDTextAttribute.h"
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
@@ -21,8 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)resetDelConform;
 //@property(nonatomic,assign)NSRange selectedRange;
 
-@property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, strong) UIColor *placeholderColor;
+//@property (nonatomic, copy) NSString *placeholder;
+//@property (nonatomic, strong) UIColor *placeholderColor;
 
 @end
 

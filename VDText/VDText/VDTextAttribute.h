@@ -1,5 +1,5 @@
 //
-//  VDTextHighlight.h
+//  VDTextAttribute.h
 //  Ecompany
 //
 //  Created by Harwyn T'an on 2019/12/12.
@@ -11,9 +11,33 @@
 NS_ASSUME_NONNULL_BEGIN
 
 UIKIT_EXTERN NSString *const VDTextBindingAttributeName;
+UIKIT_EXTERN NSString *const VDTextHighlightAttributeName;
+UIKIT_EXTERN NSString *const VDTextBackedStringAttributeName;
 
 typedef void(^VDTextAction)(UIView *containerView, NSAttributedString *text, NSRange range, CGRect rect);
 
+/**
+ VDTextBackedString objects are used by the NSAttributedString class cluster
+ as the values for text backed string attributes (stored in the attributed
+ string under the key named VDTextBackedStringAttributeName).
+ 
+ It may used for copy/paste plain text from attributed string.
+ Example: If :) is replace by a custom emoji (such as😊), the backed string can be set to @":)".
+ */
+@interface VDTextBackedString : NSObject <NSCoding, NSCopying>
++ (instancetype)stringWithString:(nullable NSString *)string;
+@property (nullable, nonatomic, copy) NSString *string; ///< backed string
+@end
+
+/**
+VDTextBinding objects are used by the NSAttributedString class cluster
+as the values for shadow attributes (stored in the attributed string under
+the key named VDTextBindingAttributeName).
+
+Add this to a range of text will make the specified characters 'binding together'.
+VDTextView will treat the range of text as a single character during text
+selection and edit.
+*/
 @interface VDTextBinding : NSObject <NSCoding, NSCopying>
 + (instancetype)bindingWithDeleteConfirm:(BOOL)deleteConfirm;
 @property (nonatomic) BOOL deleteConfirm; ///< confirm the range when delete in VDTextView
