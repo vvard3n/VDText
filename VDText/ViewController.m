@@ -70,7 +70,7 @@
     [replaceText vd_setTextBinding:[VDTextBinding bindingWithDeleteConfirm:YES] range:NSMakeRange(0, replaceText.length)];
     
 
-//    [replaceText vd_setTextHighlightRange:NSMakeRange(0, replaceText.length - 1) color:HIGHLIGHT_BLUE_COLOR backgroundColor:nil userInfo:@{@"type" : @"url", @"text" : @"anyText"}];
+    [replaceText vd_setTextHighlightRange:NSMakeRange(1, replaceText.length - 2) color:HIGHLIGHT_BLUE_COLOR backgroundColor:nil userInfo:@{@"type" : @"url", @"text" : @"anyText"}];
     
     // 添加被替换的原始字符串，用于复制
     VDTextBackedString *backed = [VDTextBackedString stringWithString:@"高亮链接"];
