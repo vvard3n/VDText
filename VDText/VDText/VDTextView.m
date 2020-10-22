@@ -114,6 +114,7 @@
     }
     VDTextBinding *binding = [self.attributedText attribute:VDTextBindingAttributeName atIndex:self.selectedRange.location - 1 longestEffectiveRange:&effectiveRange inRange:NSMakeRange(0, self.attributedText.length)];
     if (!binding) {
+        self.delConform = NO;
         [super deleteBackward];
     }
     else {
@@ -121,6 +122,7 @@
         self.preSelecteRanget = self.selectedRange;
         
         if (self.selectedRange.length > 0) {
+            self.delConform = NO;
             NSMutableAttributedString *attrbuteString = self.attributedText.mutableCopy;
             [attrbuteString replaceCharactersInRange:self.selectedRange withString:@""];
             self.attributedText = attrbuteString;
@@ -144,9 +146,9 @@
             
             self.preSelecteRanget = effectiveRange;
             self.preSelecteRanget = NSMakeRange(self.preSelecteRanget.location, 0);
+            self.attributedText = attrbuteString;
         }
         
-        self.attributedText = attrbuteString;
         self.selectedRange = self.preSelecteRanget;
     }
 }
