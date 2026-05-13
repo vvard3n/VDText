@@ -19,13 +19,13 @@
 
 ### Swift Package Manager（推荐）
 
-**Xcode：** `File → Add Package Dependencies…`，地址填仓库 URL（例如 `https://github.com/<your-account>/VDText.git`），选择 `Up to Next Major` 之类的版本规则，将 `VDText` 产品加到目标即可。
+**Xcode：** `File → Add Package Dependencies…`，地址填仓库 URL（例如 `https://github.com/vvard3n/VDText.git`），选择 `Up to Next Major` 之类的版本规则，将 `VDText` 产品加到目标即可。
 
 **`Package.swift` 中作为依赖：**
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/<your-account>/VDText.git", from: "1.0.0"),
+    .package(url: "https://github.com/vvard3n/VDText.git", from: "1.0.0"),
 ],
 targets: [
     .target(
