@@ -7,51 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7683175723A31ED6002A000E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683175623A31ED6002A000E /* AppDelegate.m */; };
-		7683175A23A31ED6002A000E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683175923A31ED6002A000E /* SceneDelegate.m */; };
-		7683175D23A31ED6002A000E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683175C23A31ED6002A000E /* ViewController.m */; };
+		AA00000000000000000000A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000010 /* AppDelegate.swift */; };
+		AA00000000000000000000A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000011 /* SceneDelegate.swift */; };
+		AA00000000000000000000A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000012 /* ViewController.swift */; };
+		AA00000000000000000000A3 /* VDTextAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000013 /* VDTextAttribute.swift */; };
+		AA00000000000000000000A4 /* VDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000014 /* VDTextView.swift */; };
+		AA00000000000000000000A5 /* VDTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000015 /* VDTextEditor.swift */; };
+		AA00000000000000000000A6 /* UIColor+VDAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000016 /* UIColor+VDAdd.swift */; };
+		76A9BDDE2D9BB2DF0075C602 /* NSAttributedString+VDAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9BDDD2D9BB2DF0075C602 /* NSAttributedString+VDAdd.swift */; };
 		7683176023A31ED6002A000E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7683175E23A31ED6002A000E /* Main.storyboard */; };
 		7683176223A31ED8002A000E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7683176123A31ED8002A000E /* Assets.xcassets */; };
 		7683176523A31ED8002A000E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7683176323A31ED8002A000E /* LaunchScreen.storyboard */; };
-		7683176823A31ED8002A000E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683176723A31ED8002A000E /* main.m */; };
-		76863786253D758F0099C87F /* UITextView+VDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7686377A253D758F0099C87F /* UITextView+VDAdd.m */; };
-		76863787253D758F0099C87F /* VDTextKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7686377C253D758F0099C87F /* VDTextKVO.m */; };
-		76863788253D758F0099C87F /* VDTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7686377D253D758F0099C87F /* VDTextAttribute.m */; };
-		76863789253D758F0099C87F /* NSAttributedString+VDText.m in Sources */ = {isa = PBXBuildFile; fileRef = 7686377E253D758F0099C87F /* NSAttributedString+VDText.m */; };
-		7686378A253D758F0099C87F /* VDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76863782253D758F0099C87F /* VDTextView.m */; };
-		7686378B253D758F0099C87F /* VDTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 76863783253D758F0099C87F /* VDTextEditor.m */; };
-		76863791253D7CE50099C87F /* UIColor+VDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 76863790253D7CE50099C87F /* UIColor+VDAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7683175223A31ED6002A000E /* VDText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VDText.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7683175523A31ED6002A000E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7683175623A31ED6002A000E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7683175823A31ED6002A000E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		7683175923A31ED6002A000E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		7683175B23A31ED6002A000E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7683175C23A31ED6002A000E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7683175F23A31ED6002A000E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7683176123A31ED8002A000E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7683176423A31ED8002A000E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7683176623A31ED8002A000E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7683176723A31ED8002A000E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		76863779253D758F0099C87F /* VDTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextView.h; sourceTree = "<group>"; };
-		7686377A253D758F0099C87F /* UITextView+VDAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+VDAdd.m"; sourceTree = "<group>"; };
-		7686377B253D758F0099C87F /* VDTextKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextKVO.h; sourceTree = "<group>"; };
-		7686377C253D758F0099C87F /* VDTextKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextKVO.m; sourceTree = "<group>"; };
-		7686377D253D758F0099C87F /* VDTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextAttribute.m; sourceTree = "<group>"; };
-		7686377E253D758F0099C87F /* NSAttributedString+VDText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+VDText.m"; sourceTree = "<group>"; };
-		7686377F253D758F0099C87F /* VDText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDText.h; sourceTree = "<group>"; };
-		76863780253D758F0099C87F /* NSAttributedString+VDText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+VDText.h"; sourceTree = "<group>"; };
-		76863781253D758F0099C87F /* VDTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextAttribute.h; sourceTree = "<group>"; };
-		76863782253D758F0099C87F /* VDTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextView.m; sourceTree = "<group>"; };
-		76863783253D758F0099C87F /* VDTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTextEditor.m; sourceTree = "<group>"; };
-		76863784253D758F0099C87F /* UITextView+VDAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+VDAdd.h"; sourceTree = "<group>"; };
-		76863785253D758F0099C87F /* VDTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTextEditor.h; sourceTree = "<group>"; };
-		7686378D253D7B910099C87F /* VDTextContents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDTextContents.h; sourceTree = "<group>"; };
-		7686378F253D7CE50099C87F /* UIColor+VDAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VDAdd.h"; sourceTree = "<group>"; };
-		76863790253D7CE50099C87F /* UIColor+VDAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VDAdd.m"; sourceTree = "<group>"; };
+		76A9BDDD2D9BB2DF0075C602 /* NSAttributedString+VDAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+VDAdd.swift"; sourceTree = "<group>"; };
+		76A9BDDF2D9BB2E10075C602 /* VDText-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VDText-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA0000000000000000000010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA0000000000000000000011 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA0000000000000000000012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000013 /* VDTextAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDTextAttribute.swift; sourceTree = "<group>"; };
+		AA0000000000000000000014 /* VDTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDTextView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000015 /* VDTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDTextEditor.swift; sourceTree = "<group>"; };
+		AA0000000000000000000016 /* UIColor+VDAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+VDAdd.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,17 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				7683176E23A31EF6002A000E /* VDText */,
-				7683175523A31ED6002A000E /* AppDelegate.h */,
-				7683175623A31ED6002A000E /* AppDelegate.m */,
-				7683175823A31ED6002A000E /* SceneDelegate.h */,
-				7683175923A31ED6002A000E /* SceneDelegate.m */,
-				7683175B23A31ED6002A000E /* ViewController.h */,
-				7683175C23A31ED6002A000E /* ViewController.m */,
+				AA0000000000000000000010 /* AppDelegate.swift */,
+				AA0000000000000000000011 /* SceneDelegate.swift */,
+				AA0000000000000000000012 /* ViewController.swift */,
 				7683175E23A31ED6002A000E /* Main.storyboard */,
 				7683176123A31ED8002A000E /* Assets.xcassets */,
 				7683176323A31ED8002A000E /* LaunchScreen.storyboard */,
 				7683176623A31ED8002A000E /* Info.plist */,
-				7683176723A31ED8002A000E /* main.m */,
 			);
 			path = VDText;
 			sourceTree = "<group>";
@@ -103,22 +82,12 @@
 		7683176E23A31EF6002A000E /* VDText */ = {
 			isa = PBXGroup;
 			children = (
-				7686378F253D7CE50099C87F /* UIColor+VDAdd.h */,
-				76863790253D7CE50099C87F /* UIColor+VDAdd.m */,
-				7686378D253D7B910099C87F /* VDTextContents.h */,
-				76863780253D758F0099C87F /* NSAttributedString+VDText.h */,
-				7686377E253D758F0099C87F /* NSAttributedString+VDText.m */,
-				76863784253D758F0099C87F /* UITextView+VDAdd.h */,
-				7686377A253D758F0099C87F /* UITextView+VDAdd.m */,
-				7686377F253D758F0099C87F /* VDText.h */,
-				76863781253D758F0099C87F /* VDTextAttribute.h */,
-				7686377D253D758F0099C87F /* VDTextAttribute.m */,
-				76863785253D758F0099C87F /* VDTextEditor.h */,
-				76863783253D758F0099C87F /* VDTextEditor.m */,
-				7686377B253D758F0099C87F /* VDTextKVO.h */,
-				7686377C253D758F0099C87F /* VDTextKVO.m */,
-				76863779253D758F0099C87F /* VDTextView.h */,
-				76863782253D758F0099C87F /* VDTextView.m */,
+				AA0000000000000000000013 /* VDTextAttribute.swift */,
+				76A9BDDD2D9BB2DF0075C602 /* NSAttributedString+VDAdd.swift */,
+				AA0000000000000000000016 /* UIColor+VDAdd.swift */,
+				AA0000000000000000000014 /* VDTextView.swift */,
+				AA0000000000000000000015 /* VDTextEditor.swift */,
+				76A9BDDF2D9BB2E10075C602 /* VDText-Bridging-Header.h */,
 			);
 			path = VDText;
 			sourceTree = "<group>";
@@ -149,11 +118,13 @@
 		7683174A23A31ED6002A000E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = vvard3n;
 				TargetAttributes = {
 					7683175123A31ED6002A000E = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -193,17 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76863789253D758F0099C87F /* NSAttributedString+VDText.m in Sources */,
-				7686378B253D758F0099C87F /* VDTextEditor.m in Sources */,
-				76863788253D758F0099C87F /* VDTextAttribute.m in Sources */,
-				7683175D23A31ED6002A000E /* ViewController.m in Sources */,
-				7686378A253D758F0099C87F /* VDTextView.m in Sources */,
-				7683175723A31ED6002A000E /* AppDelegate.m in Sources */,
-				7683176823A31ED8002A000E /* main.m in Sources */,
-				76863787253D758F0099C87F /* VDTextKVO.m in Sources */,
-				76863791253D7CE50099C87F /* UIColor+VDAdd.m in Sources */,
-				7683175A23A31ED6002A000E /* SceneDelegate.m in Sources */,
-				76863786253D758F0099C87F /* UITextView+VDAdd.m in Sources */,
+				AA00000000000000000000A0 /* AppDelegate.swift in Sources */,
+				AA00000000000000000000A1 /* SceneDelegate.swift in Sources */,
+				AA00000000000000000000A2 /* ViewController.swift in Sources */,
+				AA00000000000000000000A3 /* VDTextAttribute.swift in Sources */,
+				AA00000000000000000000A4 /* VDTextView.swift in Sources */,
+				AA00000000000000000000A5 /* VDTextEditor.swift in Sources */,
+				AA00000000000000000000A6 /* UIColor+VDAdd.swift in Sources */,
+				76A9BDDE2D9BB2DF0075C602 /* NSAttributedString+VDAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +313,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K6GE39JSUD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VDText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -354,6 +323,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nvar.VDText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VDText/VDText/VDText-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -362,8 +334,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K6GE39JSUD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VDText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,6 +344,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nvar.VDText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VDText/VDText/VDText-Bridging-Header.h";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
