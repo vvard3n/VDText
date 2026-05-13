@@ -14,6 +14,7 @@
 		AA00000000000000000000A4 /* VDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000014 /* VDTextView.swift */; };
 		AA00000000000000000000A5 /* VDTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000015 /* VDTextEditor.swift */; };
 		AA00000000000000000000A6 /* UIColor+VDAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000016 /* UIColor+VDAdd.swift */; };
+		AA00000000000000000000A7 /* VDKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000017 /* VDKit.swift */; };
 		76A9BDDE2D9BB2DF0075C602 /* NSAttributedString+VDAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9BDDD2D9BB2DF0075C602 /* NSAttributedString+VDAdd.swift */; };
 		7683176023A31ED6002A000E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7683175E23A31ED6002A000E /* Main.storyboard */; };
 		7683176223A31ED8002A000E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7683176123A31ED8002A000E /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		AA0000000000000000000014 /* VDTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDTextView.swift; sourceTree = "<group>"; };
 		AA0000000000000000000015 /* VDTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDTextEditor.swift; sourceTree = "<group>"; };
 		AA0000000000000000000016 /* UIColor+VDAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+VDAdd.swift"; sourceTree = "<group>"; };
+		AA0000000000000000000017 /* VDKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		7683176E23A31EF6002A000E /* VDText */ = {
 			isa = PBXGroup;
 			children = (
+				AA0000000000000000000017 /* VDKit.swift */,
 				AA0000000000000000000013 /* VDTextAttribute.swift */,
 				76A9BDDD2D9BB2DF0075C602 /* NSAttributedString+VDAdd.swift */,
 				AA0000000000000000000016 /* UIColor+VDAdd.swift */,
@@ -171,6 +174,7 @@
 				AA00000000000000000000A4 /* VDTextView.swift in Sources */,
 				AA00000000000000000000A5 /* VDTextEditor.swift in Sources */,
 				AA00000000000000000000A6 /* UIColor+VDAdd.swift in Sources */,
+				AA00000000000000000000A7 /* VDKit.swift in Sources */,
 				76A9BDDE2D9BB2DF0075C602 /* NSAttributedString+VDAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
