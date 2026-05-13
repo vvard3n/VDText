@@ -17,13 +17,38 @@
 
 ## 集成
 
-当前未发布到 CocoaPods / SwiftPM。建议方式：
+### Swift Package Manager（推荐）
 
-1. 将 `VDText/VDText/` 目录下的所有 `.swift` 文件以及 `VDText-Bridging-Header.h` 拖入你的目标；
-2. 在目标的 `Build Settings` 中把 `Swift Compiler - General → Objective-C Bridging Header` 指向 `VDText-Bridging-Header.h`；
-3. 如果目标已有自己的桥接头，把这份文件中的内容合并过去即可（当前内容仅为占位，并未导入 OC 头文件）。
+**Xcode：** `File → Add Package Dependencies…`，地址填仓库 URL（例如 `https://github.com/<your-account>/VDText.git`），选择 `Up to Next Major` 之类的版本规则，将 `VDText` 产品加到目标即可。
 
-> Demo App 直接位于本工程的 `VDText` target 中，打开 `VDText.xcodeproj` 选中 `VDText` scheme 即可运行体验。
+**`Package.swift` 中作为依赖：**
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/<your-account>/VDText.git", from: "1.0.0"),
+],
+targets: [
+    .target(
+        name: "YourTarget",
+        dependencies: [
+            .product(name: "VDText", package: "VDText"),
+        ]
+    ),
+],
+```
+
+> 仓库根的 `Package.swift` 直接复用 `VDText/VDText/` 目录下的源码作为 SwiftPM target，不会带入 Demo App 的代码。最低部署目标 iOS 13.0。
+
+### 手动集成
+
+如果不想引入包管理：
+
+1. 将 `VDText/VDText/` 目录下的所有 `.swift` 文件拖入你的目标；
+2. `Build Settings` 中确认 Swift 版本可用（库代码使用了 Swift 5.9+ 引入的 `MainActor.assumeIsolated` 等 API）。
+
+### 运行 Demo
+
+打开 `VDText.xcodeproj` 选 `VDText` scheme 即可运行。该 target 同时承载 Demo App 与历史 OC 兼容（通过 `VDText-Bridging-Header.h` 作为占位），与 SwiftPM 包共用一份源码。
 
 ## 快速开始
 

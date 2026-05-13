@@ -11,7 +11,7 @@ import CoreText
 
 /// 获取预定义的属性字符串
 /// 包含 UIKit、CoreText 和 VDText 中定义的所有属性
-extension NSAttributedString {
+public extension NSAttributedString {
     
     /// 将字符串归档为数据
     /// - Returns: 如果发生错误则返回 nil
@@ -567,7 +567,7 @@ extension NSAttributedString {
 
 // MARK: - NSMutableAttributedString 扩展
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
     
     // MARK: - 设置字符属性
     
@@ -1428,7 +1428,7 @@ extension NSMutableAttributedString {
 
 // MARK: - NSAttributedString VDText 查询接口
 
-extension NSAttributedString {
+public extension NSAttributedString {
 
     /// 返回指定范围的纯文本。
     /// 如果范围内存在 `vdTextBackedString` 属性，会用 backed string 替换对应区段。
@@ -1453,7 +1453,7 @@ extension NSAttributedString {
 
 // MARK: - 仅 NSMutableAttributedString 的额外工具
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
 
     /// 在连续 ZWJ（U+200D，emoji 连接符）字符范围内把前景色设为透明色。
     ///

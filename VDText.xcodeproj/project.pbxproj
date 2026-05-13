@@ -73,6 +73,7 @@
 				AA0000000000000000000010 /* AppDelegate.swift */,
 				AA0000000000000000000011 /* SceneDelegate.swift */,
 				AA0000000000000000000012 /* ViewController.swift */,
+				76A9BDDF2D9BB2E10075C602 /* VDText-Bridging-Header.h */,
 				7683175E23A31ED6002A000E /* Main.storyboard */,
 				7683176123A31ED8002A000E /* Assets.xcassets */,
 				7683176323A31ED8002A000E /* LaunchScreen.storyboard */,
@@ -90,7 +91,6 @@
 				AA0000000000000000000016 /* UIColor+VDAdd.swift */,
 				AA0000000000000000000014 /* VDTextView.swift */,
 				AA0000000000000000000015 /* VDTextEditor.swift */,
-				76A9BDDF2D9BB2E10075C602 /* VDText-Bridging-Header.h */,
 			);
 			path = VDText;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nvar.VDText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VDText/VDText/VDText-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "VDText/VDText-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nvar.VDText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VDText/VDText/VDText-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "VDText/VDText-Bridging-Header.h";
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
